@@ -302,7 +302,7 @@ def generate_trainer_pages(trainers, mondata, output_dir):
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1 class='center'>Mirror Gold Trainerdex</h1>
+    <h1 class='center'>Hardlove Gold Trainerdex</h1>
     <div class="center"><h3><a href="./index.html">Back to Trainer Index</a></h3></div>
     <h1 class="center">{escape(trainer['name']).replace('_', ' ').upper()} <small>(ID: {trainer['id']})</small></h1>
 """)
@@ -433,11 +433,11 @@ def generate_index(trainers, output_path, id_to_area):
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mirror Gold Trainer Index</title>
+    <title>Hardlove Gold Trainer Index</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1 class="center">Mirror Gold Trainer Index</h1>
+    <h1 class="center">Hardlove Gold Trainer Index</h1>
     <h3 class='center'><a href='../index.html'>Back to Wiki Index</a></h3>
     <div class="center">
         <input type="text" id="searchBox" class="center" placeholder="Search Trainers..." onkeyup="filterList()" />

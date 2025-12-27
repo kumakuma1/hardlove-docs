@@ -475,7 +475,7 @@ def generate_pokemon_pages(evodata_path, output_dir, mondata_path, species_path,
             <link rel='stylesheet' type='text/css' href='../style.css'>
           </head>
           <body>
-            <h1 class='center'>Mirror Gold Pokédex</h1>
+            <h1 class='center'>Hardlove Gold Pokédex</h1>
             <h3 class='center'><a href='./index.html'>Back to Pokédex Index</a></h3>
             <h2 class='center'>{species}</h2>
             <div class='sprite info-line'>{img_tag}</div>
@@ -624,7 +624,7 @@ def generate_index(species_path, output_path="docs/pokedex/index.html"):
 
     with open(output_path, "w") as f:
         f.write("<!DOCTYPE html>\n<html lang='en'>\n<head>\n")
-        f.write("  <meta charset='UTF-8'>\n  <title>Mirror Gold Pokédex Index</title>\n")
+        f.write("  <meta charset='UTF-8'>\n  <title>Hardlove Gold Pokédex Index</title>\n")
         f.write("  <link rel='stylesheet' href='../style.css'>\n")
         f.write("""
   <script>
@@ -641,7 +641,7 @@ def generate_index(species_path, output_path="docs/pokedex/index.html"):
   </script>
         """)
         f.write("</head>\n<body>\n")
-        f.write("  <h1 class='center'>Mirror Gold Pokédex</h1>\n")
+        f.write("  <h1 class='center'>Hardlove Gold Pokédex</h1>\n")
         f.write("  <h3 class='center'><a href='../index.html'>Back to Wiki Index</a></h3>\n")
         f.write("  <div class='center'><input type='text' id='searchBox' class='center' placeholder='Search Pokémon...' onkeyup='filterPokemon()' /></div>\n")
         f.write("  <ul id='pokemonList' class='center'>\n")
