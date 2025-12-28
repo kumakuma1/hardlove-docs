@@ -183,6 +183,11 @@ def get_egg_moves_from_json(learnsets, species_no_prefix: str):
     entry = learnsets.get(key, {})
     return [_pretty_move(m) for m in entry.get("EggMoves", [])]
 
+def get_tutor_moves_from_json(learnsets, species_no_prefix: str):
+    key = f"SPECIES_{species_no_prefix}"
+    entry = learnsets.get(key, {})
+    return [_pretty_move(m) for m in entry.get("TutorMoves", [])]
+
 
 def get_machine_moves_from_json(learnsets, species_no_prefix: str):
     key = f"SPECIES_{species_no_prefix}"
@@ -566,6 +571,7 @@ def generate_pokemon_pages(evodata_path, output_dir, mondata_path, species_path,
             # Egg & Machine moves from JSON (tables, 1 col)
             egg_moves = get_egg_moves_from_json(learnsets, species)
             machine_moves = get_machine_moves_from_json(learnsets, species)
+            tutor_moves = get_tutor_moves_from_json(learnsets, species)
 
             egg_html = "<table>\n  <tr><th>Egg Move</th></tr>\n"
             if egg_moves:
@@ -574,6 +580,14 @@ def generate_pokemon_pages(evodata_path, output_dir, mondata_path, species_path,
             else:
                 egg_html += "  <tr><td>(none)</td></tr>\n"
             egg_html += "</table>"
+
+            tutor_html = "<table>\n  <tr><th>Tutor Move</th></tr>\n"
+            if tutor_moves:
+                for move in tutor_moves:
+                    tutor_html += f"  <tr><td>{move}</td></tr>\n"
+            else:
+                tutor_html += "  <tr><td>(none)</td></tr>\n"
+            tutor_html += "</table>"
 
             machine_html = "<table>\n  <tr><th>Machine Move</th></tr>\n"
             if machine_moves:
@@ -589,6 +603,9 @@ def generate_pokemon_pages(evodata_path, output_dir, mondata_path, species_path,
             
                 <h3 class='center'>Machine Moves</h3>
                 {machine_html}
+
+                <h3 class='center'>Tutor Moves</h3>
+                {tutor_html}
             
                 <h3 class='center'>Egg Moves</h3>
                 {egg_html}
