@@ -1,276 +1,209 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <title>FAQ</title>
-    <link rel='stylesheet' href='../style.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ · Hardlove Gold</title>
+    <meta name="description" content="Frequently asked questions about Pokémon Hardlove Gold.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <h1 class='center'>FAQ</h1>
-    <ul class='center'>
-        <li>
-            <b>
-                What emulator should I use?
-            </b>
-            <br />
-            I recommend melonDS. Desmume and Drastic on Android also work well.
-        </li>
-        <li>
-            <b>
-                Can I play the game on hardware?
-            </b>
-            <br />
-            I don't know and have no way of testing.
-        </li>
-        <li>
-            <b>
-                Is Hardlove Gold built with Emerald-Expansion or CFRU?
-            </b>
-            <br />
-            No. It is built with hg-engine.
-        </li>
-        <li>
-            <b>
-                Is Hardlove Gold harder than Null or Run&Bun or Platinum Kaizo?
-            </b>
-            <br />
-            I don't think it's harder overall. However, the endgame is more unfair than Run&Bun's.
-        </li>
-        <li>
-            <b>
-                Is Hardlove Gold just Run&Bun in Gen4?
-            </b>
-            <br />
-            It definitely leans in that direction, but hopefully, it brings something novel to the table and mixes things up enough to stand on its own.
-        </li>
-        <li>
-            <b>
-                Why did Run&Bun heavily influence the making of Hardlove?
-            </b>
-            <br />
-            In my opinion, Run&Bun created an entirely new genre of difficulty hacks with the balancing, restrictions,
-            and mechanics it introduced. I really liked them. Kudos to the creator.
-        <li>
-            <b>
-                Does Dekzeh know you "stole" so much from Run&Bun?
-            </b>
-            <br />
-            No. I reached out to him, but never got an answer.
-        </li>
-        <li>
-            <b>
-                [insert name] is also in Platinum Kaizo. Did you copy it from there?
-            </b>
-            <br />
-            No. I have had no prior knowledge about Platinum Kaizo before the release. I don't know the creators either.
-            Furthermore the entire time my repo and commits were public.
-        </li>
-        <li>
-            <b>
-                Who created the AI for Hardlove Gold?
-            </b>
-            <br />
-            I did. I wrote it from scratch with some help from the Run&Bun's specs document. I also asked Rain and Terra for their opinions on certain topics.
-        </li>
-        <li>
-            <b>
-                Does the AI cheat or read player inputs?
-            </b>
-            <br />
-            No.
-        </li>
-        <li>
-            <b>
-                Why does the AI calc switch-in scores against both Pokémons in double battles?
-            </b>
-            <br />
-            By doing this, the AI plays very aggressive or tries to attempts to pivot into more stable positions, before sending out frail sweepers later in the fight.
-        </li>
-        <li>
-            <b>
-                Why did the AI use [insert name] in situation [insert description]?
-            </b>
-            <br />
-            I have no idea. I would need a save file to debug or see the debug output from that situation.
-        </li>
-        <li>
-            <b>
-                Sometimes the fights seem unfair and unbalanced? Why?
-            </b>
-            <br />
-            Yes.
-        </li>
-        <li>
-            <b>
-                Why do I have to fight every trainer? Why are so many rng moments?
-            </b>
-            <br />
-            I see Pokémon as a gigantic slot machine. Enough unfair and rng moments to widdle down your team and box, so that the boss fights finish you off.
-        </li>
-        <li>
-            <b>
-                Why do Pokémon [insert name] does not have [insert name]?
-            </b>
-            <br />
-            With the current state of hg-engine there are still a few unimplemented moves, abilities and mechanics.
-        </li>
-        <li>
-            <b>
-                Do I have to play it as a Nuzlocke?
-            </b>
-            <br />
-            No. Although the game is optimized for nuzlocking, you are welcome to play it however you want.
-        </li>
-        <li>
-            <b>
-                The game is too hard for me. How can I play it anyways?
-            </b>
-            <br />
-            There is a built-in easy mode you can choose at the start within Mom's dialogue.
-            (I appreciate any feedback on this to create a more casual playthrough.)
-        </li>
-        <li>
-            <b>
-                I got a Rayquaza. Was this intended?
-            </b>
-            <br />
-            No. This was built for me to speed run the game for debugging a certain situation. I never removed it.
-        </li>
-        <li>
-            <b>
-                Why is the rest of Kanto missing from the game?
-            </b>
-            <br />
-            I want the adventure to take place mainly in Johto.
-            Including Kanto would have made the game bloated and way too long.
-        </li>
-        <li>
-            <b>
-                Did you beat Run&Bun/[insert name] as Nuzlocke?
-            </b>
-            <br />
-            No. I am terrible at playing Pokémon.
-        </li>
-        <li>
-            <b>
-                Is Pokémon [insert name] in the game?
-            </b>
-            <br />
-            There is a comprehensive list of unobtainable Pokémon in the encounter documentation.
-        </li>
-        <li>
-            <b>
-                Why is Pokémon [insert name] not obtainable?
-            </b>
-            <br />
-            Simply because I chose to do so.
-        </li>
-        <li>
-            <b>
-                Why are so few Gen 9 Pokémon obtainable?
-            </b>
-            <br />
-            I don't like them that much.
-        </li>
-        <li>
-            <b>
-                Which Pokémons are changed or buffed?
-            </b>
-            <br />
-            There are no type or stat changes. A few Pokémons have had their ability changed for balancing purposes.
-        <li>
-            <b>
-                Does the game has custom maps?
-            </b>
-            <br />
-            No, only minor functional changes to a few maps.
-        </li>
-        <li>
-            <b>
-                Some Pokémons show up as Bulbasaur in battle?
-            </b>
-            <br />
-            This is the fallback sprite in hg-engine if a specific Pokémon's one is not yet finished.
-            It is just a placeholder for the sprite.
-        </li>
-        <li>
-            <b>
-                How long did it take to make the game?
-            </b>
-            <br />
-            It took roughly 3 years, although most of time was spent modernizing hg-engine.
-        </li>
-        <li>
-            <b>
-                How did you manage to work so long on one thing?
-            </b>
-            <br />
-            I spent almost 10 years working in software engineering. I have sat through countless of unecessary meetings,
-            warned managers about stupid decisions, watched those warnings get ignored, and then being tasked to fix the exact problems
-            I warned them about. This builds frustration tolerance. (But hey, it was fun too, sometimes.)
-        </li>
-        <li>
-            <b>
-                Who helped you built the game?
-            </b>
-            <br />
-            The core development team consists of exactly me and my cat.
-            A few awesome individuals helped out with minor map edits, playtesting, or team balancing.
-            I also owe a massive thank you to the many contributors of hg-engine!
-            If you want to help or provide feedback going forward, I highly appreciate it.
-        </li>
-        <li>
-            <b>
-                How do I reach out to you for helping?
-            </b>
-            <br />
-            Just join the Hardlove Gold Discord.
-        </li>
-        <li>
-            <b>
-                I want to make a game like this. How do I start?
-            </b>
-            <br />
-            Learn to programm (a bit). Seriously. Hg-engine is not beginner friendly compared to Gen 3 hacking tools.
-            That said, Gen 4 also has some easier hacking tools that require less coding skills.
-        </li>
-        <li>
-            <b>
-                I encountered a bug. How do I report it?
-            </b>
-            <br />
-            Ideally you open a thread on my the Hardlove Gold discord. General battle engine bugs can also
-            be reported on the hg-engine github repo.
-        </li>
-        <li>
-            <b>
-                What does the cat actually contribute to development?
-            </b>
-            <br />
-            I don't have a cat. (It is a joke.)
-        </li>
-        <li>
-            <b>
-                Do you stream your playthroughs?
-            </b>
-            <br />
-            No, I am not a streamer.
-        </li>
-        <li>
-            <b>
-                Are you planning to build more rom hacks?
-            </b>
-            <br />
-            No.
-        </li>
-        <li>
-            <b>
-                Should I know anything else before I start playing?
-            </b>
-            <br />
-            Just dive in and consult the documentation if you need to.
-            Enjoy!
-        </li>
-    </ul>
+<body class="site">
+    <header class="topbar">
+        <nav class="topbar-inner">
+            <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">Hardlove Gold</span></a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../pokedex/index.html">Pokédex</a>
+                <a href="./faq.html" aria-current="page">FAQ</a>
+                <a href="https://discord.com/invite/nzfk8jBATE" target="_blank" rel="noopener">Discord</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-head">
+            <h1>FAQ</h1>
+            <p>Answers to the questions that come up most often. Click a question to open it.</p>
+        </div>
+        <div class="faq-controls">
+            <input type="search" id="faqSearch" placeholder="Search the FAQ…" aria-label="Search the FAQ">
+        </div>
+        <div class="faq" id="faqList">
+            <details>
+                <summary>What emulator should I use?</summary>
+                <div class="answer">I recommend melonDS. Desmume and Drastic on Android also work well.</div>
+            </details>
+            <details>
+                <summary>Can I play the game on hardware?</summary>
+                <div class="answer">I don't know and have no way of testing.</div>
+            </details>
+            <details>
+                <summary>Is Hardlove Gold built with Emerald-Expansion or CFRU?</summary>
+                <div class="answer">No. It is built with hg-engine.</div>
+            </details>
+            <details>
+                <summary>Is Hardlove Gold harder than Null or Run&amp;Bun or Platinum Kaizo?</summary>
+                <div class="answer">I don't think it's harder overall. However, the endgame is more unfair than Run&amp;Bun's.</div>
+            </details>
+            <details>
+                <summary>Is Hardlove Gold just Run&amp;Bun in Gen4?</summary>
+                <div class="answer">It definitely leans in that direction, but hopefully, it brings something novel to the table and mixes things up enough to stand on its own.</div>
+            </details>
+            <details>
+                <summary>Why did Run&amp;Bun heavily influence the making of Hardlove?</summary>
+                <div class="answer">In my opinion, Run&amp;Bun created an entirely new genre of difficulty hacks with the balancing, restrictions, and mechanics it introduced. I really liked them. Kudos to the creator.</div>
+            </details>
+            <details>
+                <summary>Does Dekzeh know you "stole" so much from Run&amp;Bun?</summary>
+                <div class="answer">No. I reached out to him, but never got an answer.</div>
+            </details>
+            <details>
+                <summary>[insert name] is also in Platinum Kaizo. Did you copy it from there?</summary>
+                <div class="answer">No. I have had no prior knowledge about Platinum Kaizo before the release. I don't know the creators either. Furthermore the entire time my repo and commits were public.</div>
+            </details>
+            <details>
+                <summary>Who created the AI for Hardlove Gold?</summary>
+                <div class="answer">I did. I wrote it from scratch with some help from the Run&amp;Bun's specs document. I also asked Rain and Terra for their opinions on certain topics.</div>
+            </details>
+            <details>
+                <summary>Does the AI cheat or read player inputs?</summary>
+                <div class="answer">No.</div>
+            </details>
+            <details>
+                <summary>Why does the AI calc switch-in scores against both Pokémons in double battles?</summary>
+                <div class="answer">By doing this, the AI plays very aggressive or tries to attempts to pivot into more stable positions, before sending out frail sweepers later in the fight.</div>
+            </details>
+            <details>
+                <summary>Why did the AI use [insert name] in situation [insert description]?</summary>
+                <div class="answer">I have no idea. I would need a save file to debug or see the debug output from that situation.</div>
+            </details>
+            <details>
+                <summary>Sometimes the fights seem unfair and unbalanced? Why?</summary>
+                <div class="answer">Yes.</div>
+            </details>
+            <details>
+                <summary>Why do I have to fight every trainer? Why are so many rng moments?</summary>
+                <div class="answer">I see Pokémon as a gigantic slot machine. Enough unfair and rng moments to widdle down your team and box, so that the boss fights finish you off.</div>
+            </details>
+            <details>
+                <summary>Why do Pokémon [insert name] does not have [insert name]?</summary>
+                <div class="answer">With the current state of hg-engine there are still a few unimplemented moves, abilities and mechanics.</div>
+            </details>
+            <details>
+                <summary>Do I have to play it as a Nuzlocke?</summary>
+                <div class="answer">No. Although the game is optimized for nuzlocking, you are welcome to play it however you want.</div>
+            </details>
+            <details>
+                <summary>The game is too hard for me. How can I play it anyways?</summary>
+                <div class="answer">There is a built-in easy mode you can choose at the start within Mom's dialogue. (I appreciate any feedback on this to create a more casual playthrough.)</div>
+            </details>
+            <details>
+                <summary>I got a Rayquaza. Was this intended?</summary>
+                <div class="answer">No. This was built for me to speed run the game for debugging a certain situation. I never removed it.</div>
+            </details>
+            <details>
+                <summary>Why is the rest of Kanto missing from the game?</summary>
+                <div class="answer">I want the adventure to take place mainly in Johto. Including Kanto would have made the game bloated and way too long.</div>
+            </details>
+            <details>
+                <summary>Did you beat Run&amp;Bun/[insert name] as Nuzlocke?</summary>
+                <div class="answer">No. I am terrible at playing Pokémon.</div>
+            </details>
+            <details>
+                <summary>Is Pokémon [insert name] in the game?</summary>
+                <div class="answer">There is a comprehensive list of unobtainable Pokémon in the encounter documentation.</div>
+            </details>
+            <details>
+                <summary>Why is Pokémon [insert name] not obtainable?</summary>
+                <div class="answer">Simply because I chose to do so.</div>
+            </details>
+            <details>
+                <summary>Why are so few Gen 9 Pokémon obtainable?</summary>
+                <div class="answer">I don't like them that much.</div>
+            </details>
+            <details>
+                <summary>Which Pokémons are changed or buffed?</summary>
+                <div class="answer">There are no type or stat changes. A few Pokémons have had their ability changed for balancing purposes.</div>
+            </details>
+            <details>
+                <summary>Does the game has custom maps?</summary>
+                <div class="answer">No, only minor functional changes to a few maps.</div>
+            </details>
+            <details>
+                <summary>Some Pokémons show up as Bulbasaur in battle?</summary>
+                <div class="answer">This is the fallback sprite in hg-engine if a specific Pokémon's one is not yet finished. It is just a placeholder for the sprite.</div>
+            </details>
+            <details>
+                <summary>How long did it take to make the game?</summary>
+                <div class="answer">It took roughly 3 years, although most of time was spent modernizing hg-engine.</div>
+            </details>
+            <details>
+                <summary>How did you manage to work so long on one thing?</summary>
+                <div class="answer">I spent almost 10 years working in software engineering. I have sat through countless of unecessary meetings, warned managers about stupid decisions, watched those warnings get ignored, and then being tasked to fix the exact problems I warned them about. This builds frustration tolerance. (But hey, it was fun too, sometimes.)</div>
+            </details>
+            <details>
+                <summary>Who helped you built the game?</summary>
+                <div class="answer">The core development team consists of exactly me and my cat. A few awesome individuals helped out with minor map edits, playtesting, or team balancing. I also owe a massive thank you to the many contributors of hg-engine! If you want to help or provide feedback going forward, I highly appreciate it.</div>
+            </details>
+            <details>
+                <summary>How do I reach out to you for helping?</summary>
+                <div class="answer">Just join the Hardlove Gold Discord.</div>
+            </details>
+            <details>
+                <summary>I want to make a game like this. How do I start?</summary>
+                <div class="answer">Learn to programm (a bit). Seriously. Hg-engine is not beginner friendly compared to Gen 3 hacking tools. That said, Gen 4 also has some easier hacking tools that require less coding skills.</div>
+            </details>
+            <details>
+                <summary>I encountered a bug. How do I report it?</summary>
+                <div class="answer">Ideally you open a thread on my the Hardlove Gold discord. General battle engine bugs can also be reported on the hg-engine github repo.</div>
+            </details>
+            <details>
+                <summary>What does the cat actually contribute to development?</summary>
+                <div class="answer">I don't have a cat. (It is a joke.)</div>
+            </details>
+            <details>
+                <summary>Do you stream your playthroughs?</summary>
+                <div class="answer">No, I am not a streamer.</div>
+            </details>
+            <details>
+                <summary>Are you planning to build more rom hacks?</summary>
+                <div class="answer">No.</div>
+            </details>
+            <details>
+                <summary>Should I know anything else before I start playing?</summary>
+                <div class="answer">Just dive in and consult the documentation if you need to. Enjoy!</div>
+            </details>
+            <p class="faq-empty" id="faqEmpty">No questions match your search.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span>Pokémon Hardlove Gold · a free fan project</span>
+            <span>Built with <a href="https://github.com/BluRosie/hg-engine" target="_blank" rel="noopener">hg-engine</a></span>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var input = document.getElementById('faqSearch');
+            var items = Array.prototype.slice.call(document.querySelectorAll('#faqList details'));
+            var empty = document.getElementById('faqEmpty');
+            input.addEventListener('input', function () {
+                var term = input.value.trim().toLowerCase();
+                var shown = 0;
+                items.forEach(function (d) {
+                    var match = !term || d.textContent.toLowerCase().indexOf(term) !== -1;
+                    d.style.display = match ? '' : 'none';
+                    d.open = !!term && match;
+                    if (match) shown++;
+                });
+                empty.style.display = shown ? 'none' : 'block';
+            });
+        })();
+    </script>
 </body>
 </html>
